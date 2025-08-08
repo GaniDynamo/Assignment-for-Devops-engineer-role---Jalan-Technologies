@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: better-nodejs-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: better-nodejs-app
+  template:
+    metadata:
+      labels:
+        app: better-nodejs-app
+    spec:
+      containers:
+      - name: better-nodejs-container
+        image: yourdockerhubusername/better-nodejs-app:latest
+        ports:
+        - containerPort: 3000
