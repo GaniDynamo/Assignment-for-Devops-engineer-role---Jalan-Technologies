@@ -1,0 +1,12 @@
+{
+  "name": "better-nodejs-app",
+  "version": "1.0.0",
+  "description": "Node.js app for Better company with DevOps internship assignment",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
