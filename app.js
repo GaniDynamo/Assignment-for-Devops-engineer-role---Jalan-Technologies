@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
     <h1>Welcome to Better (Prev: Jalan Technologies)</h1>
     <p>We are an AI-powered software development agency building scalable web, mobile, and custom applications.</p>
     <p><strong>DevOps Internship Assignment:</strong> Showcase a deployment pipeline for this Node.js app using Docker, Kubernetes, GitHub Actions, and Docker Hub or AWS ECR.</p>
-    <p>Built with ❤️ by [Your Name]</p>
+    <p>Built by Arveti Ganesh</p>
   `);
 });
 
