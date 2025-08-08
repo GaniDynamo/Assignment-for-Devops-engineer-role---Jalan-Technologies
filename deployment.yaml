@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: better-nodejs-container
-        image: yourdockerhubusername/better-nodejs-app:latest
+        image: dynamo28/better-nodejs-app:latest
         ports:
         - containerPort: 3000
