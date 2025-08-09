@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: Amazon Linux-latest
+    runs-on: ubuntu-latest  # use ubuntu-latest or your self-hosted runner label
 
     steps:
     - name: Checkout code
@@ -38,6 +38,6 @@ jobs:
         KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
       run: |
         echo "$KUBE_CONFIG_DATA" | base64 --decode > kubeconfig
-        export KUBECONFIG=kubeconfig
+        export KUBECONFIG=$(pwd)/kubeconfig
         kubectl apply -f deployment.yaml
         kubectl apply -f service.yaml
